@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>template</title>
+	<link rel="stylesheet" href="lib/jquery-ui/jquery-ui.min.css">
+	<link rel="stylesheet" href="lib/ionicons/css/ionicons.min.css">
+	<link rel="stylesheet" href="css/css.css">
+	<link rel="stylesheet" href="css/theme.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<div class="titleBar drag">
+		<div class="buttons right no-drag">
+			<div class="ion-close btn close no-drag"></div>
+			<div class="ion-arrow-resize btn maximize no-drag"></div>
+			<div class="ion-minus btn minimize no-drag"></div>
+			
+		</div>
+		<div class="buttons left no-drag">
+			<div class="ion-play btn stop3d no-drag"></div>
+			<div class="ion-code btn code no-drag"></div>
+			<div class="ion-android-options btn options no-drag"></div>
+			<div class="ion-chevron-left btn toggle_Left no-drag"></div>
+		</div>
+		<span id="appTitle">template</span>
+	</div>
+	<div class="main">
+		<div class="left-bar">
+			<div class="container">
+				<ul class="list scenes">
+					<li id="Default" class="page_btn">Default</li>
+					<li id="terrain_raycast" class="page_btn">terrain_raycast</li>
+					<li id="geometry_teapot" class="page_btn">geometry_teapot</li>
+					<li id="shaders_ocean2" class="page_btn">shaders_ocean2</li>
+					<li id="mirror" class="page_btn">mirror</li>
+					<li id="fps" class="page_btn">fps</li>
+					<li id="hdr" class="page_btn">hdr</li>
+				</ul>
+				<ul class="list files">
+					<li class="file" fileName="Default.html">Default.html</li>
+					<li class="file" fileName="terrain_raycast.html">terrain_raycast.html</li>
+					<li class="file" fileName="geometry_teapot.html">geometry_teapot.html</li>
+					<li class="file" fileName="shaders_ocean2.html">shaders_ocean2.html</li>
+					<li class="file" fileName="fps.html">fps.html</li>
+				</ul>
+			</div>
+		</div>
+		<div class="center">
+			<div class="mask"></div>
+			<div class="container">
+				<iframe id="frame" src="" frameborder="0"></iframe>
+			</div>
+			
+		</div>
+		<div class="dialog cfg">
+			<div class="handlebar"></div>
+			<div class="content">
+				<ul class="log">
+					<li id="leftSize"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="lib/jquery-ui/jquery-ui.min.js"></script>
+	<script src="js/js.js"></script>
+</body>
+</html>
